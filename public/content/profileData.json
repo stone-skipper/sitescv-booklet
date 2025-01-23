@@ -1,0 +1,652 @@
+{
+  "general": {
+    "profilePhoto": "/content/media/profilePhoto.jpg",
+    "username": "seungmee_lee",
+    "displayName": "Seungmee Lee",
+    "profession": "interaction designer",
+    "location": "Singapore",
+    "pronouns": null,
+    "byline": "interaction designer in Singapore",
+    "website": "https://seungmee-lee.com",
+    "websiteURL": "https://seungmee-lee.com",
+    "about": "A designer who codes, exploring new interactions and technologies.\n\nI'm looking for a new opportunity in AI products, and ready to explore and craft delightful interactions for the new technology! ",
+    "status": {
+      "text": "Leaving Singapore in Jan, taking break in Seoul in Jan/Feb, and starting fresh in London in March! HMU for chats and coffee! ",
+      "emoji": "🙂",
+      "timestamp": "2024-12-12T01:41:55.956Z"
+    },
+    "sectionOrder": [
+      "Side Projects",
+      "Projects",
+      "Work Experience",
+      "Writing",
+      "Speaking",
+      "Awards",
+      "Features",
+      "Volunteering",
+      "Exhibitions",
+      "Education",
+      "Certifications",
+      "Contact",
+      "Teams"
+    ]
+  },
+  "projects": [
+    {
+      "id": "4erFVeTAow07nPCJLPaI",
+      "year": "2023",
+      "heading": "Framer Slides",
+      "url": "https://framer-slides.framer.website",
+      "collaborators": [],
+      "description": "Design your slides on Framer - a new way to create interactive slides with videos and buttons, and simply share with a URL. Designed to be responsive and customizable.",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1584,
+          "height": 1080,
+          "url": "/content/media/Framer-Slides-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1422,
+          "height": 800,
+          "url": "/content/media/Framer-Slides-2.mp4"
+        }
+      ],
+      "type": "project",
+      "title": "Framer Slides",
+      "company": ""
+    },
+    {
+      "id": "ClaBJv3QL3CV4AmrRrZS",
+      "year": "2023",
+      "heading": "ShaderGradient 1.0 at ShaderGradient",
+      "url": "https://shadergradient.co",
+      "collaborators": [
+        {
+          "displayName": "ruucm",
+          "profilePhoto": "/content/collaborators/ruucm.jpg",
+          "profileURL": "https://read.cv/ruucm"
+        }
+      ],
+      "description": "Create moving gradients - now available for Framer, Figma, and React!\n\nWe're also live on Product Hunt - please support us with upvotes and reviews!\nhttps://www.producthunt.com/posts/shadergradient-1-0-official-launch",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1270,
+          "height": 760,
+          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 720,
+          "height": 1276,
+          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-2.mov"
+        },
+        {
+          "type": "video",
+          "width": 1920,
+          "height": 1080,
+          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-3.mp4"
+        },
+        {
+          "type": "video",
+          "width": 720,
+          "height": 1189,
+          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-4.mov"
+        }
+      ],
+      "type": "project",
+      "title": "ShaderGradient 1.0",
+      "company": "ShaderGradient"
+    },
+    {
+      "id": "MAFtNoTK658eSXpeoe9e",
+      "year": "2019",
+      "heading": "Wonderland (2024)",
+      "url": null,
+      "collaborators": [],
+      "description": "Props designer for the film Wonderland, directed by Taeyong Kim. Designed the objects for the film, and managed the production of mockups.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 3000,
+          "height": 1687,
+          "url": "/content/media/Wonderland-2024.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Wonderland (2024)",
+      "company": ""
+    }
+  ],
+  "sideProjects": [
+    {
+      "id": "Di1mM8RuTdBUaL8AKkDt",
+      "year": "Ongoing",
+      "heading": "Timeface",
+      "url": "https://timeface.co",
+      "collaborators": [],
+      "description": "Turn your side monitor into a beautiful art display.\n\nCurrently in beta - more interfaces and features to be added.",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1732,
+          "height": 1080,
+          "url": "/content/media/Timeface-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1617,
+          "height": 1060,
+          "url": "/content/media/Timeface-2.mov"
+        }
+      ],
+      "type": "sideProject",
+      "title": "Timeface",
+      "company": ""
+    },
+    {
+      "id": "FvlMQXRYtea8Mcgivpoo",
+      "year": "2023",
+      "heading": "Sunshines on a screen",
+      "url": "http://ambient-reader.vercel.app",
+      "collaborators": [],
+      "description": "An experiment using react-three-fiber to simulate natural sunshine and shadow on a screen.",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1444,
+          "height": 1080,
+          "url": "/content/media/Sunshines-on-a-screen-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1920,
+          "height": 1080,
+          "url": "/content/media/Sunshines-on-a-screen-2.mp4"
+        }
+      ],
+      "type": "sideProject",
+      "title": "Sunshines on a screen",
+      "company": ""
+    },
+    {
+      "id": "lEnM1ybvr5ISIwDsx5XF",
+      "year": "2022",
+      "heading": "Handzplay",
+      "url": "http://handzplay.vercel.app",
+      "collaborators": [],
+      "description": "Playground for hand gesture interaction. Add rules and interfaces by yourself.",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "url": "/content/media/Handzplay-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "url": "/content/media/Handzplay-2.mp4"
+        }
+      ],
+      "type": "sideProject",
+      "title": "Handzplay",
+      "company": null
+    },
+    {
+      "id": "wK8TELrZz0CK86ofR8qW",
+      "year": "2021",
+      "heading": "better on paper",
+      "url": "https://itsbetteronpaper.com/",
+      "collaborators": [],
+      "description": "Film photography archive of mine.",
+      "attachments": [
+        {
+          "type": "video",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/better-on-paper-1.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1440,
+          "height": 1080,
+          "url": "/content/media/better-on-paper-2.mp4"
+        },
+        {
+          "type": "video",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/better-on-paper-3.mp4"
+        }
+      ],
+      "type": "sideProject",
+      "title": "better on paper",
+      "company": ""
+    }
+  ],
+  "exhibitions": [],
+  "talks": [],
+  "writing": [
+    {
+      "id": "xzTV5kEy6rwoMhbn8U8F",
+      "year": "2023",
+      "heading": "I connected Stable Diffusion with my smartphone camera. And here's what I learned, Prototypr",
+      "url": "https://prototypr.io/post/i-connected-stable-diffusion-with-my-smartphone-camera-and-heres-what-i-learned",
+      "collaborators": [],
+      "description": null,
+      "attachments": [
+        {
+          "type": "video",
+          "width": 640,
+          "height": 500,
+          "url": "/content/media/I-connected-Stable-Diffusion-with-my-smartphone-camera-And-heres-what-I-learned-Prototypr.mp4"
+        }
+      ],
+      "type": "writing",
+      "title": "I connected Stable Diffusion with my smartphone camera. And here's what I learned",
+      "publisher": "Prototypr"
+    },
+    {
+      "id": "1r3BrDNnDA64JN31pHJG",
+      "year": "2022",
+      "heading": "Medium",
+      "url": "https://medium.com/@stone.skipper",
+      "collaborators": [],
+      "description": "Sharing thoughts behind my projects and explorations in design and tech.",
+      "attachments": [],
+      "type": "writing",
+      "title": "Medium",
+      "publisher": null
+    }
+  ],
+  "awards": [],
+  "features": [],
+  "workExperience": [
+    {
+      "id": "TKDEvZViQL3kpDdqWE9o",
+      "year": "2021 — 2024",
+      "heading": "Interaction Designer at Dell Technologies",
+      "url": null,
+      "collaborators": [],
+      "description": "Interaction designer @ Dell Innovation Studio, exploring future experiences and interactions",
+      "attachments": [],
+      "type": "workExperience",
+      "title": "Interaction Designer",
+      "company": "Dell Technologies",
+      "location": "Singapore"
+    },
+    {
+      "id": "zPGUwxdXOdvs4E57TzaR",
+      "year": "2019 — 2019",
+      "heading": "Creative Designer at Doubleme",
+      "url": "https://www.twin.world/",
+      "collaborators": [],
+      "description": "Participated in the early stage of the product to shape the strategy and visuals for the overall user experience.",
+      "attachments": [],
+      "type": "workExperience",
+      "title": "Creative Designer",
+      "company": "Doubleme",
+      "location": "Seoul, Korea"
+    },
+    {
+      "id": "Al22ZSKvyUOlMhfaHFgC",
+      "year": "2018 — 2019",
+      "heading": "Design internship at Dell Technologies",
+      "url": null,
+      "collaborators": [],
+      "description": null,
+      "attachments": [],
+      "type": "workExperience",
+      "title": "Design internship",
+      "company": "Dell Technologies",
+      "location": "Austin, TX"
+    }
+  ],
+  "volunteering": [],
+  "education": [],
+  "certifications": [],
+  "contact": [
+    {
+      "id": "k2D4tFEPnN0bILqjEbiU",
+      "platform": "Twitter",
+      "handle": "smee_leee",
+      "url": "https://twitter.com/smee_leee"
+    },
+    {
+      "id": "bAijwD5YmmxJFME8QvZe",
+      "platform": "Email",
+      "handle": "iam.seungmee.lee@gmail.com",
+      "url": "mailto:iam.seungmee.lee@gmail.com"
+    },
+    {
+      "id": "e1rcNSNUho9dVk7wxFgs",
+      "platform": "Instagram",
+      "handle": "smee.leee",
+      "url": "https://instagram.com/smee.leee"
+    },
+    {
+      "id": "GErjI3GhfQF9Iacc11v0",
+      "platform": "Coffee chat",
+      "handle": "Book a time",
+      "url": "https://calendar.app.google/29vsRfFNRgbZis997"
+    }
+  ],
+  "allCollections": [
+    {
+      "name": "Side Projects",
+      "items": [
+        {
+          "id": "Di1mM8RuTdBUaL8AKkDt",
+          "year": "Ongoing",
+          "heading": "Timeface",
+          "url": "https://timeface.co",
+          "collaborators": [],
+          "description": "Turn your side monitor into a beautiful art display.\n\nCurrently in beta - more interfaces and features to be added.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1732,
+              "height": 1080,
+              "url": "/content/media/Timeface-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1617,
+              "height": 1060,
+              "url": "/content/media/Timeface-2.mov"
+            }
+          ],
+          "type": "sideProject",
+          "title": "Timeface",
+          "company": ""
+        },
+        {
+          "id": "FvlMQXRYtea8Mcgivpoo",
+          "year": "2023",
+          "heading": "Sunshines on a screen",
+          "url": "http://ambient-reader.vercel.app",
+          "collaborators": [],
+          "description": "An experiment using react-three-fiber to simulate natural sunshine and shadow on a screen.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1444,
+              "height": 1080,
+              "url": "/content/media/Sunshines-on-a-screen-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1920,
+              "height": 1080,
+              "url": "/content/media/Sunshines-on-a-screen-2.mp4"
+            }
+          ],
+          "type": "sideProject",
+          "title": "Sunshines on a screen",
+          "company": ""
+        },
+        {
+          "id": "lEnM1ybvr5ISIwDsx5XF",
+          "year": "2022",
+          "heading": "Handzplay",
+          "url": "http://handzplay.vercel.app",
+          "collaborators": [],
+          "description": "Playground for hand gesture interaction. Add rules and interfaces by yourself.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1280,
+              "height": 720,
+              "url": "/content/media/Handzplay-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1280,
+              "height": 720,
+              "url": "/content/media/Handzplay-2.mp4"
+            }
+          ],
+          "type": "sideProject",
+          "title": "Handzplay",
+          "company": null
+        },
+        {
+          "id": "wK8TELrZz0CK86ofR8qW",
+          "year": "2021",
+          "heading": "better on paper",
+          "url": "https://itsbetteronpaper.com/",
+          "collaborators": [],
+          "description": "Film photography archive of mine.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/better-on-paper-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1440,
+              "height": 1080,
+              "url": "/content/media/better-on-paper-2.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/better-on-paper-3.mp4"
+            }
+          ],
+          "type": "sideProject",
+          "title": "better on paper",
+          "company": ""
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "items": [
+        {
+          "id": "4erFVeTAow07nPCJLPaI",
+          "year": "2023",
+          "heading": "Framer Slides",
+          "url": "https://framer-slides.framer.website",
+          "collaborators": [],
+          "description": "Design your slides on Framer - a new way to create interactive slides with videos and buttons, and simply share with a URL. Designed to be responsive and customizable.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1584,
+              "height": 1080,
+              "url": "/content/media/Framer-Slides-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 1422,
+              "height": 800,
+              "url": "/content/media/Framer-Slides-2.mp4"
+            }
+          ],
+          "type": "project",
+          "title": "Framer Slides",
+          "company": ""
+        },
+        {
+          "id": "ClaBJv3QL3CV4AmrRrZS",
+          "year": "2023",
+          "heading": "ShaderGradient 1.0 at ShaderGradient",
+          "url": "https://shadergradient.co",
+          "collaborators": [
+            {
+              "displayName": "ruucm",
+              "profilePhoto": "/content/collaborators/ruucm.jpg",
+              "profileURL": "https://read.cv/ruucm"
+            }
+          ],
+          "description": "Create moving gradients - now available for Framer, Figma, and React!\n\nWe're also live on Product Hunt - please support us with upvotes and reviews!\nhttps://www.producthunt.com/posts/shadergradient-1-0-official-launch",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1270,
+              "height": 760,
+              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-1.mp4"
+            },
+            {
+              "type": "video",
+              "width": 720,
+              "height": 1276,
+              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-2.mov"
+            },
+            {
+              "type": "video",
+              "width": 1920,
+              "height": 1080,
+              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-3.mp4"
+            },
+            {
+              "type": "video",
+              "width": 720,
+              "height": 1189,
+              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-4.mov"
+            }
+          ],
+          "type": "project",
+          "title": "ShaderGradient 1.0",
+          "company": "ShaderGradient"
+        },
+        {
+          "id": "MAFtNoTK658eSXpeoe9e",
+          "year": "2019",
+          "heading": "Wonderland (2024)",
+          "url": null,
+          "collaborators": [],
+          "description": "Props designer for the film Wonderland, directed by Taeyong Kim. Designed the objects for the film, and managed the production of mockups.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 3000,
+              "height": 1687,
+              "url": "/content/media/Wonderland-2024.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Wonderland (2024)",
+          "company": ""
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "items": [
+        {
+          "id": "TKDEvZViQL3kpDdqWE9o",
+          "year": "2021 — 2024",
+          "heading": "Interaction Designer at Dell Technologies",
+          "url": null,
+          "collaborators": [],
+          "description": "Interaction designer @ Dell Innovation Studio, exploring future experiences and interactions",
+          "attachments": [],
+          "type": "workExperience",
+          "title": "Interaction Designer",
+          "company": "Dell Technologies",
+          "location": "Singapore"
+        },
+        {
+          "id": "zPGUwxdXOdvs4E57TzaR",
+          "year": "2019 — 2019",
+          "heading": "Creative Designer at Doubleme",
+          "url": "https://www.twin.world/",
+          "collaborators": [],
+          "description": "Participated in the early stage of the product to shape the strategy and visuals for the overall user experience.",
+          "attachments": [],
+          "type": "workExperience",
+          "title": "Creative Designer",
+          "company": "Doubleme",
+          "location": "Seoul, Korea"
+        },
+        {
+          "id": "Al22ZSKvyUOlMhfaHFgC",
+          "year": "2018 — 2019",
+          "heading": "Design internship at Dell Technologies",
+          "url": null,
+          "collaborators": [],
+          "description": null,
+          "attachments": [],
+          "type": "workExperience",
+          "title": "Design internship",
+          "company": "Dell Technologies",
+          "location": "Austin, TX"
+        }
+      ]
+    },
+    {
+      "name": "Writing",
+      "items": [
+        {
+          "id": "xzTV5kEy6rwoMhbn8U8F",
+          "year": "2023",
+          "heading": "I connected Stable Diffusion with my smartphone camera. And here's what I learned, Prototypr",
+          "url": "https://prototypr.io/post/i-connected-stable-diffusion-with-my-smartphone-camera-and-heres-what-i-learned",
+          "collaborators": [],
+          "description": null,
+          "attachments": [
+            {
+              "type": "video",
+              "width": 640,
+              "height": 500,
+              "url": "/content/media/I-connected-Stable-Diffusion-with-my-smartphone-camera-And-heres-what-I-learned-Prototypr.mp4"
+            }
+          ],
+          "type": "writing",
+          "title": "I connected Stable Diffusion with my smartphone camera. And here's what I learned",
+          "publisher": "Prototypr"
+        },
+        {
+          "id": "1r3BrDNnDA64JN31pHJG",
+          "year": "2022",
+          "heading": "Medium",
+          "url": "https://medium.com/@stone.skipper",
+          "collaborators": [],
+          "description": "Sharing thoughts behind my projects and explorations in design and tech.",
+          "attachments": [],
+          "type": "writing",
+          "title": "Medium",
+          "publisher": null
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "items": [
+        {
+          "id": "k2D4tFEPnN0bILqjEbiU",
+          "platform": "Twitter",
+          "handle": "smee_leee",
+          "url": "https://twitter.com/smee_leee"
+        },
+        {
+          "id": "bAijwD5YmmxJFME8QvZe",
+          "platform": "Email",
+          "handle": "iam.seungmee.lee@gmail.com",
+          "url": "mailto:iam.seungmee.lee@gmail.com"
+        },
+        {
+          "id": "e1rcNSNUho9dVk7wxFgs",
+          "platform": "Instagram",
+          "handle": "smee.leee",
+          "url": "https://instagram.com/smee.leee"
+        },
+        {
+          "id": "GErjI3GhfQF9Iacc11v0",
+          "platform": "Coffee chat",
+          "handle": "Book a time",
+          "url": "https://calendar.app.google/29vsRfFNRgbZis997"
+        }
+      ]
+    }
+  ]
+}
