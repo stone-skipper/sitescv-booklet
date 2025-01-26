@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
   list-style-type: none;
 }
 
- :root {
+:root {
   --color: #111;
   --border: rgba(0, 0, 0, 0.1);
   --padding: min(6vw, 48px);
@@ -13,16 +15,16 @@
 }
 
 .hideScrollBar {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-.hideScrollBar::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.hideScrollBar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 body {
-  font-family: 'Inter Variable', sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-size: var(--type-size);
   line-height: 1.6;
   color: var(--color);
@@ -31,31 +33,31 @@ body {
   text-size-adjust: none;
   background: black;
   /* overflow: hidden; */
-  overflow-x:hidden;
-  overflow-y:scroll;
-  width:100vw;
-  height:100dvh;
-      -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100dvh;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .anton {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position:fixed;
+  position: fixed;
 }
 
 a {
@@ -75,11 +77,11 @@ a {
   display: block;
   border-radius: 8px;
   overflow: hidden;
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .media::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -94,17 +96,15 @@ a {
   height: 100%;
   display: block;
   object-fit: cover;
-    pointer-events:none;
-      user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  pointer-events: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .paper {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
-
-
