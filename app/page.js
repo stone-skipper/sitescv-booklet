@@ -1,12 +1,6 @@
 "use client";
 
-import React, {
-  useMemo,
-  useEffect,
-  useState,
-  useRef,
-  useCallback,
-} from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import ReactDOM from "react-dom/client";
 import { combineCollections, RichText } from "readcv";
 import {
@@ -19,6 +13,7 @@ import {
 import "@fontsource-variable/inter";
 import "@fontsource/anton";
 import { useSwipeable } from "react-swipeable";
+import { useDesktopDetect } from "./utils";
 
 // some shared properties between components
 const paperAnim = { type: "spring", bounce: 0.05 };
@@ -1236,34 +1231,49 @@ const getColorfulness = (hex) => {
   return s * Math.sqrt(l); // This formula can be adjusted for different perceptions of colorfulness
 };
 
-const useDesktopDetect = () => {
-  // const [isDesktop, setIsDesktop] = useState(() => {
-  //   // Check if window is defined (we're in the browser, not server-side)
-  //   if (typeof window !== "undefined") {
-  //     return window.innerWidth >= 1024;
-  //   }
-  //   // Default to false if window is not defined
-  //   return false;
-  // });
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+// const useDesktopDetect = () => {
+// const [isDesktop, setIsDesktop] = useState(() => {
+//   // Check if window is defined (we're in the browser, not server-side)
+//   if (typeof window !== "undefined") {
+//     return window.innerWidth >= 1024;
+//   }
+//   // Default to false if window is not defined
+//   return false;
+// });
+// const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-      console.log(isDesktop);
-    };
+// useEffect(() => {
+//   const handleResize = () => {
+//     setIsDesktop(window.innerWidth >= 1024);
+//     console.log(isDesktop);
+//   };
 
-    // Add event listener
-    window.addEventListener("resize", handleResize);
+//   // Add event listener
+//   window.addEventListener("resize", handleResize);
 
-    // Call handler right away so state gets updated with initial window size
-    handleResize();
+//   // Call handler right away so state gets updated with initial window size
+//   handleResize();
 
-    // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+//   // Remove event listener on cleanup
+//   return () => window.removeEventListener("resize", handleResize);
+// }, []);
 
-  return isDesktop;
-};
+// return isDesktop;
+
+//   const [isDesktop, setIsDesktop] = useState(false);
+
+//   useLayoutEffect(() => {
+//     setIsDesktop(window.innerWidth >= 1024);
+
+//     const handleResize = () => {
+//       setIsDesktop(window.innerWidth >= 1024);
+//     };
+
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+
+//   return isDesktop;
+// };
 
 export default App;
