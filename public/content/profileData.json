@@ -1,309 +1,614 @@
 {
   "general": {
     "profilePhoto": "/content/media/profilePhoto.jpg",
-    "username": "seungmee_lee",
-    "displayName": "Seungmee Lee",
-    "profession": "interaction designer",
-    "location": "Singapore",
-    "pronouns": null,
-    "byline": "interaction designer in Singapore",
-    "website": "https://seungmee-lee.com",
-    "websiteURL": "https://seungmee-lee.com",
-    "about": "A designer who codes, exploring new interactions and technologies.\n\nI'm looking for a new opportunity in AI products, and ready to explore and craft delightful interactions for the new technology! ",
+    "username": "ericafustero",
+    "displayName": "Erica Fustero",
+    "profession": "Multidisciplinary creative",
+    "location": "Barcelona",
+    "pronouns": "She/Her",
+    "byline": "Multidisciplinary creative in Barcelona, She/Her",
+    "website": "http://www.ericafustero.com",
+    "websiteURL": "http://www.ericafustero.com",
+    "about": null,
     "status": {
-      "text": "Leaving Singapore in Jan, taking break in Seoul in Jan/Feb, and starting fresh in London in March! HMU for chats and coffee! ",
-      "emoji": "🙂",
-      "timestamp": "2024-12-12T01:41:55.956Z"
+      "text": null,
+      "emoji": null,
+      "timestamp": null
     },
-    "sectionOrder": [
-      "Side Projects",
-      "Projects",
-      "Work Experience",
-      "Writing",
-      "Speaking",
-      "Awards",
-      "Features",
-      "Volunteering",
-      "Exhibitions",
-      "Education",
-      "Certifications",
-      "Contact",
-      "Teams"
-    ]
+    "sectionOrder": null
   },
   "projects": [
     {
-      "id": "4erFVeTAow07nPCJLPaI",
-      "year": "2023",
-      "heading": "Framer Slides",
-      "url": "https://framer-slides.framer.website",
+      "id": "Q98W5YVcPLJQvQEBWNZF",
+      "year": "Ongoing",
+      "heading": "Life with subtitles",
+      "url": "https://www.ericafustero.com/project/vida-con-subtitulos",
       "collaborators": [],
-      "description": "Design your slides on Framer - a new way to create interactive slides with videos and buttons, and simply share with a URL. Designed to be responsive and customizable.",
-      "attachments": [
-        {
-          "type": "video",
-          "width": 1584,
-          "height": 1080,
-          "url": "/content/media/Framer-Slides-1.mp4"
-        },
-        {
-          "type": "video",
-          "width": 1422,
-          "height": 800,
-          "url": "/content/media/Framer-Slides-2.mp4"
-        }
-      ],
-      "type": "project",
-      "title": "Framer Slides",
-      "company": ""
-    },
-    {
-      "id": "ClaBJv3QL3CV4AmrRrZS",
-      "year": "2023",
-      "heading": "ShaderGradient 1.0 at ShaderGradient",
-      "url": "https://shadergradient.co",
-      "collaborators": [
-        {
-          "displayName": "ruucm",
-          "profilePhoto": "/content/collaborators/ruucm.jpg",
-          "profileURL": "https://read.cv/ruucm"
-        }
-      ],
-      "description": "Create moving gradients - now available for Framer, Figma, and React!\n\nWe're also live on Product Hunt - please support us with upvotes and reviews!\nhttps://www.producthunt.com/posts/shadergradient-1-0-official-launch",
-      "attachments": [
-        {
-          "type": "video",
-          "width": 1270,
-          "height": 760,
-          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-1.mp4"
-        },
-        {
-          "type": "video",
-          "width": 720,
-          "height": 1276,
-          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-2.mov"
-        },
-        {
-          "type": "video",
-          "width": 1920,
-          "height": 1080,
-          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-3.mp4"
-        },
-        {
-          "type": "video",
-          "width": 720,
-          "height": 1189,
-          "url": "/content/media/ShaderGradient-10-at-ShaderGradient-4.mov"
-        }
-      ],
-      "type": "project",
-      "title": "ShaderGradient 1.0",
-      "company": "ShaderGradient"
-    },
-    {
-      "id": "MAFtNoTK658eSXpeoe9e",
-      "year": "2019",
-      "heading": "Wonderland (2024)",
-      "url": null,
-      "collaborators": [],
-      "description": "Props designer for the film Wonderland, directed by Taeyong Kim. Designed the objects for the film, and managed the production of mockups.",
+      "description": "Comic strips based on daily life and observations, often focusing on human contradictions and the absurd moments that surround us.",
       "attachments": [
         {
           "type": "image",
-          "width": 3000,
-          "height": 1687,
-          "url": "/content/media/Wonderland-2024.jpg"
+          "width": 800,
+          "height": 800,
+          "url": "/content/media/Life-with-subtitles-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/Life-with-subtitles-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/Life-with-subtitles-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/Life-with-subtitles-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/Life-with-subtitles-5.jpg"
         }
       ],
       "type": "project",
-      "title": "Wonderland (2024)",
-      "company": ""
-    }
-  ],
-  "sideProjects": [
-    {
-      "id": "Di1mM8RuTdBUaL8AKkDt",
-      "year": "Ongoing",
-      "heading": "Timeface",
-      "url": "https://timeface.co",
-      "collaborators": [],
-      "description": "Turn your side monitor into a beautiful art display.\n\nCurrently in beta - more interfaces and features to be added.",
-      "attachments": [
-        {
-          "type": "video",
-          "width": 1732,
-          "height": 1080,
-          "url": "/content/media/Timeface-1.mp4"
-        },
-        {
-          "type": "video",
-          "width": 1617,
-          "height": 1060,
-          "url": "/content/media/Timeface-2.mov"
-        }
-      ],
-      "type": "sideProject",
-      "title": "Timeface",
+      "title": "Life with subtitles",
       "company": ""
     },
     {
-      "id": "FvlMQXRYtea8Mcgivpoo",
-      "year": "2023",
-      "heading": "Sunshines on a screen",
-      "url": "http://ambient-reader.vercel.app",
-      "collaborators": [],
-      "description": "An experiment using react-three-fiber to simulate natural sunshine and shadow on a screen.",
+      "id": "Ck1tTptForenZsQtdnCR",
+      "year": "2025",
+      "heading": "Record Club: 2024 Year in Review at Record Club",
+      "url": "https://record.club/2024",
+      "collaborators": [
+        {
+          "displayName": "Mattias",
+          "profilePhoto": "/content/collaborators/mattias.jpg",
+          "profileURL": "https://read.cv/mattias"
+        }
+      ],
+      "description": "[Record Club](https://record.club/) is a music discovery platform and social network. For their 2024 Year in Review retrospective I created a set of 12 illustrations paying tribute to some of the most popular albums in the platform and designed the videos and graphics for the social media campaign.\n\nMost fun project of 2024? Absolutely.\\\nThe killer design of the mini-site is from [Mattias](https://read.cv/mattias).",
       "attachments": [
         {
           "type": "video",
-          "width": 1444,
-          "height": 1080,
-          "url": "/content/media/Sunshines-on-a-screen-1.mp4"
+          "width": 1080,
+          "height": 1350,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-1.mp4"
         },
+        {
+          "type": "video",
+          "width": 810,
+          "height": 1012,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-2.mp4"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-5.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-6.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-7.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-8.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-9.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-10.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-11.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-12.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-13.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1000,
+          "height": 1000,
+          "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-14.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Record Club: 2024 Year in Review",
+      "company": "Record Club"
+    },
+    {
+      "id": "7gCMkqvw8QJnQr2rO0Ol",
+      "year": "2024",
+      "heading": "A drawing a day",
+      "url": "https://www.ericafustero.com/project/daily-drawings",
+      "collaborators": [],
+      "description": "During 2024 I made this bilingual diary, which served as both a comic, a collection of my memories and a portfolio to show and evolve my drawing style.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/A-drawing-a-day-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/A-drawing-a-day-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/A-drawing-a-day-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/A-drawing-a-day-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/A-drawing-a-day-5.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/A-drawing-a-day-6.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/A-drawing-a-day-7.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/A-drawing-a-day-8.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "A drawing a day",
+      "company": ""
+    },
+    {
+      "id": "kTzuBkTcCsdFVGfkTvZ3",
+      "year": "2024",
+      "heading": "Zaragoza Fear Fest at Zaragoza Fear",
+      "url": "https://www.ericafustero.com/project/zgzfearfest2024",
+      "collaborators": [],
+      "description": "Visual campaign for Zaragoza Fear Fest, a horror and genre film festival organized by the [Zaragoza Fear](https://www.zgzfear.com/) collective. The design pays tribute to the production of 'The Texas Chainsaw Massacre', as terrifying as the film itself. Along with the poster I created a set of postcards capturing some behind the scenes moments from the movie.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 1358,
+          "height": 1920,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1721,
+          "height": 1722,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-5.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-6.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-7.gif"
+        }
+      ],
+      "type": "project",
+      "title": "Zaragoza Fear Fest",
+      "company": "Zaragoza Fear"
+    },
+    {
+      "id": "n1Av4QkjsgdsigkH26J5",
+      "year": "2024",
+      "heading": "Tourism for beginners",
+      "url": "https://www.ericafustero.com/project/tourism-beginners",
+      "collaborators": [],
+      "description": "A guide with practical advice for the conscious traveler.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Tourism-for-beginners-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Tourism-for-beginners-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Tourism-for-beginners-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Tourism-for-beginners-4.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Tourism for beginners",
+      "company": ""
+    },
+    {
+      "id": "yKhKlGUAKjuN85zKw1lU",
+      "year": "2024",
+      "heading": "Cafecito reviews",
+      "url": "https://www.ericafustero.com/project/cafecito-reviews",
+      "collaborators": [],
+      "description": "Observations and thoughts around the world of speciality coffee.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Cafecito-reviews-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Cafecito-reviews-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Cafecito-reviews-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1920,
+          "url": "/content/media/Cafecito-reviews-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Cafecito-reviews-5.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Cafecito-reviews-6.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Cafecito reviews",
+      "company": ""
+    },
+    {
+      "id": "DW4nFCjYwlJ6CQnV2J9Z",
+      "year": "2024",
+      "heading": "Movies, music, books",
+      "url": "https://www.ericafustero.com/project/movies-music-books",
+      "collaborators": [],
+      "description": "A selection of illustrations inspired by movies, music and books. You can see more of these in my [Best of 2023 article](https://www.ericafustero.com/project/top-2023) and in my [blog](https://www.ericafustero.com/tag/favoritos-del-mes).",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 1100,
+          "height": 1500,
+          "url": "/content/media/Movies-music-books-1.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1100,
+          "height": 1500,
+          "url": "/content/media/Movies-music-books-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1100,
+          "height": 1500,
+          "url": "/content/media/Movies-music-books-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1100,
+          "height": 1500,
+          "url": "/content/media/Movies-music-books-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1100,
+          "height": 1500,
+          "url": "/content/media/Movies-music-books-5.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Movies, music, books",
+      "company": ""
+    },
+    {
+      "id": "BUs2sONSbHtJk2pWQAFQ",
+      "year": "2024",
+      "heading": "Meeting at 10",
+      "url": "https://www.ericafustero.com/project/meeting-at-10",
+      "collaborators": [],
+      "description": "Animated short film about a woman running late for a very important meeting. Head to my website to see the full animation and read about the making of.",
+      "attachments": [
         {
           "type": "video",
           "width": 1920,
           "height": 1080,
-          "url": "/content/media/Sunshines-on-a-screen-2.mp4"
+          "url": "/content/media/Meeting-at-10.mp4"
         }
       ],
-      "type": "sideProject",
-      "title": "Sunshines on a screen",
+      "type": "project",
+      "title": "Meeting at 10",
       "company": ""
     },
     {
-      "id": "lEnM1ybvr5ISIwDsx5XF",
-      "year": "2022",
-      "heading": "Handzplay",
-      "url": "http://handzplay.vercel.app",
+      "id": "KLA3a3YXskeivNSIXn7Y",
+      "year": "2024",
+      "heading": "Best of 2023",
+      "url": "https://www.ericafustero.com/project/top-2023",
       "collaborators": [],
-      "description": "Playground for hand gesture interaction. Add rules and interfaces by yourself.",
+      "description": "My illustrated year in review, a magazine-like post topped off with recommendations from many talented friends.",
       "attachments": [
         {
           "type": "video",
-          "width": 1280,
-          "height": 720,
-          "url": "/content/media/Handzplay-1.mp4"
+          "width": 1080,
+          "height": 1080,
+          "url": "/content/media/Best-of-2023-1.mp4"
         },
         {
-          "type": "video",
-          "width": 1280,
-          "height": 720,
-          "url": "/content/media/Handzplay-2.mp4"
+          "type": "image",
+          "width": 1300,
+          "height": 1300,
+          "url": "/content/media/Best-of-2023-2.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1300,
+          "height": 1300,
+          "url": "/content/media/Best-of-2023-3.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1300,
+          "height": 1300,
+          "url": "/content/media/Best-of-2023-4.jpg"
+        },
+        {
+          "type": "image",
+          "width": 1300,
+          "height": 1300,
+          "url": "/content/media/Best-of-2023-5.jpg"
         }
       ],
-      "type": "sideProject",
-      "title": "Handzplay",
-      "company": null
+      "type": "project",
+      "title": "Best of 2023",
+      "company": ""
     },
     {
-      "id": "wK8TELrZz0CK86ofR8qW",
-      "year": "2021",
-      "heading": "better on paper",
-      "url": "https://itsbetteronpaper.com/",
+      "id": "MJRleeqsLaHoCYGWyTco",
+      "year": "2023",
+      "heading": "Based on a true story",
+      "url": "https://www.ericafustero.com/project/basado-en-hechos-reales",
       "collaborators": [],
-      "description": "Film photography archive of mine.",
+      "description": "Based on a true story is a series of frame by frame animations based on 100% real events.",
       "attachments": [
         {
-          "type": "video",
-          "width": 1080,
-          "height": 1080,
-          "url": "/content/media/better-on-paper-1.mp4"
+          "type": "image",
+          "width": 800,
+          "height": 800,
+          "url": "/content/media/Based-on-a-true-story-1.gif"
         },
         {
-          "type": "video",
-          "width": 1440,
-          "height": 1080,
-          "url": "/content/media/better-on-paper-2.mp4"
+          "type": "image",
+          "width": 800,
+          "height": 800,
+          "url": "/content/media/Based-on-a-true-story-2.gif"
         },
         {
-          "type": "video",
-          "width": 1080,
-          "height": 1080,
-          "url": "/content/media/better-on-paper-3.mp4"
+          "type": "image",
+          "width": 800,
+          "height": 800,
+          "url": "/content/media/Based-on-a-true-story-3.gif"
         }
       ],
-      "type": "sideProject",
-      "title": "better on paper",
+      "type": "project",
+      "title": "Based on a true story",
+      "company": ""
+    },
+    {
+      "id": "CikFPwpU7yv7UaE5k7VT",
+      "year": "2023",
+      "heading": "Visual design at Redbubble",
+      "url": "https://www.ericafustero.com/project/redbubble",
+      "collaborators": [],
+      "description": "As an in-house designer and art director, I partnered with designers, copywriters, and marketers to help Redbubble be the main source for Gen Z and Gen X audiences looking for super-specific designs.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 480,
+          "height": 520,
+          "url": "/content/media/Visual-design-at-Redbubble-1.gif"
+        },
+        {
+          "type": "image",
+          "width": 960,
+          "height": 960,
+          "url": "/content/media/Visual-design-at-Redbubble-2.gif"
+        },
+        {
+          "type": "image",
+          "width": 700,
+          "height": 700,
+          "url": "/content/media/Visual-design-at-Redbubble-3.gif"
+        },
+        {
+          "type": "image",
+          "width": 640,
+          "height": 700,
+          "url": "/content/media/Visual-design-at-Redbubble-4.gif"
+        }
+      ],
+      "type": "project",
+      "title": "Visual design",
+      "company": "Redbubble"
+    },
+    {
+      "id": "bD8SfxuBy1uiKSBGnaGI",
+      "year": "2023",
+      "heading": "Animated randomness",
+      "url": "https://www.ericafustero.com/project/animation-archive",
+      "collaborators": [],
+      "description": "A selection of gifs and short animations.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 750,
+          "height": 750,
+          "url": "/content/media/Animated-randomness-1.gif"
+        },
+        {
+          "type": "image",
+          "width": 750,
+          "height": 750,
+          "url": "/content/media/Animated-randomness-2.gif"
+        },
+        {
+          "type": "image",
+          "width": 800,
+          "height": 800,
+          "url": "/content/media/Animated-randomness-3.gif"
+        }
+      ],
+      "type": "project",
+      "title": "Animated randomness",
+      "company": ""
+    },
+    {
+      "id": "0XJ6oO3yM2hZf9wm5dvu",
+      "year": "2023",
+      "heading": "Diary comics 2016-2023",
+      "url": "https://www.ericafustero.com/project/diary-comics",
+      "collaborators": [],
+      "description": "Excerpts from my illustrated diaries, where I draw comic strips and visual essays about my daily life.",
+      "attachments": [
+        {
+          "type": "image",
+          "width": 2400,
+          "height": 1600,
+          "url": "/content/media/Diary-comics-2016-2023.jpg"
+        }
+      ],
+      "type": "project",
+      "title": "Diary comics 2016-2023",
       "company": ""
     }
   ],
+  "sideProjects": [],
   "exhibitions": [],
   "talks": [],
-  "writing": [
-    {
-      "id": "xzTV5kEy6rwoMhbn8U8F",
-      "year": "2023",
-      "heading": "I connected Stable Diffusion with my smartphone camera. And here's what I learned, Prototypr",
-      "url": "https://prototypr.io/post/i-connected-stable-diffusion-with-my-smartphone-camera-and-heres-what-i-learned",
-      "collaborators": [],
-      "description": null,
-      "attachments": [
-        {
-          "type": "video",
-          "width": 640,
-          "height": 500,
-          "url": "/content/media/I-connected-Stable-Diffusion-with-my-smartphone-camera-And-heres-what-I-learned-Prototypr.mp4"
-        }
-      ],
-      "type": "writing",
-      "title": "I connected Stable Diffusion with my smartphone camera. And here's what I learned",
-      "publisher": "Prototypr"
-    },
-    {
-      "id": "1r3BrDNnDA64JN31pHJG",
-      "year": "2022",
-      "heading": "Medium",
-      "url": "https://medium.com/@stone.skipper",
-      "collaborators": [],
-      "description": "Sharing thoughts behind my projects and explorations in design and tech.",
-      "attachments": [],
-      "type": "writing",
-      "title": "Medium",
-      "publisher": null
-    }
-  ],
+  "writing": [],
   "awards": [],
   "features": [],
   "workExperience": [
     {
-      "id": "TKDEvZViQL3kpDdqWE9o",
-      "year": "2021 — 2024",
-      "heading": "Interaction Designer at Dell Technologies",
-      "url": null,
+      "id": "zZiqRu1dF5mrzxJcmtU5",
+      "year": "2016 — 2023",
+      "heading": "Visual designer at Redbubble",
+      "url": "https://www.ericafustero.com/project/redbubble",
       "collaborators": [],
-      "description": "Interaction designer @ Dell Innovation Studio, exploring future experiences and interactions",
+      "description": "As an in-house visual designer, I took part in promotions, seasonal campaigns, product launches, awareness campaigns, and internal projects. \n\nMy role changed from project to project: art direction, animation, illustration, production artist, or all at once, depending on the project needs and timeframes.",
       "attachments": [],
       "type": "workExperience",
-      "title": "Interaction Designer",
-      "company": "Dell Technologies",
-      "location": "Singapore"
-    },
-    {
-      "id": "zPGUwxdXOdvs4E57TzaR",
-      "year": "2019 — 2019",
-      "heading": "Creative Designer at Doubleme",
-      "url": "https://www.twin.world/",
-      "collaborators": [],
-      "description": "Participated in the early stage of the product to shape the strategy and visuals for the overall user experience.",
-      "attachments": [],
-      "type": "workExperience",
-      "title": "Creative Designer",
-      "company": "Doubleme",
-      "location": "Seoul, Korea"
-    },
-    {
-      "id": "Al22ZSKvyUOlMhfaHFgC",
-      "year": "2018 — 2019",
-      "heading": "Design internship at Dell Technologies",
-      "url": null,
-      "collaborators": [],
-      "description": null,
-      "attachments": [],
-      "type": "workExperience",
-      "title": "Design internship",
-      "company": "Dell Technologies",
-      "location": "Austin, TX"
+      "title": "Visual designer",
+      "company": "Redbubble",
+      "location": "Remote"
     }
   ],
   "volunteering": [],
@@ -311,230 +616,615 @@
   "certifications": [],
   "contact": [
     {
-      "id": "k2D4tFEPnN0bILqjEbiU",
-      "platform": "Twitter",
-      "handle": "smee_leee",
-      "url": "https://twitter.com/smee_leee"
+      "id": "3ct6Kv0PWgzHeVmy83Mf",
+      "platform": "Website",
+      "handle": "ericafustero.com",
+      "url": "https://www.ericafustero.com/"
     },
     {
-      "id": "bAijwD5YmmxJFME8QvZe",
+      "id": "mCmukmQWpbC7xtQ9Px5g",
       "platform": "Email",
-      "handle": "iam.seungmee.lee@gmail.com",
-      "url": "mailto:iam.seungmee.lee@gmail.com"
+      "handle": "hola@ericafustero.com",
+      "url": "mailto:hola@ericafustero.com"
     },
     {
-      "id": "e1rcNSNUho9dVk7wxFgs",
+      "id": "isRh9vs21dgC2nTiPnUF",
+      "platform": "Mastodon",
+      "handle": "@ericafustero",
+      "url": "https://mastodon.social/@ericafustero"
+    },
+    {
+      "id": "wTjGR2prUAoFQNszyXvR",
+      "platform": "Bluesky",
+      "handle": "ericafustero.com",
+      "url": "https://bsky.app/profile/ericafustero.com"
+    },
+    {
+      "id": "0twoNYZpzCEuez9KsvnO",
       "platform": "Instagram",
-      "handle": "smee.leee",
-      "url": "https://instagram.com/smee.leee"
+      "handle": "ericafustero",
+      "url": "https://instagram.com/ericafustero"
     },
     {
-      "id": "GErjI3GhfQF9Iacc11v0",
-      "platform": "Coffee chat",
-      "handle": "Book a time",
-      "url": "https://calendar.app.google/29vsRfFNRgbZis997"
+      "id": "aDp45o63e6LvrR9lac9t",
+      "platform": "LinkedIn",
+      "handle": "ericafustero",
+      "url": "https://linkedin.com/in/ericafustero"
     }
   ],
   "allCollections": [
     {
-      "name": "Side Projects",
-      "items": [
-        {
-          "id": "Di1mM8RuTdBUaL8AKkDt",
-          "year": "Ongoing",
-          "heading": "Timeface",
-          "url": "https://timeface.co",
-          "collaborators": [],
-          "description": "Turn your side monitor into a beautiful art display.\n\nCurrently in beta - more interfaces and features to be added.",
-          "attachments": [
-            {
-              "type": "video",
-              "width": 1732,
-              "height": 1080,
-              "url": "/content/media/Timeface-1.mp4"
-            },
-            {
-              "type": "video",
-              "width": 1617,
-              "height": 1060,
-              "url": "/content/media/Timeface-2.mov"
-            }
-          ],
-          "type": "sideProject",
-          "title": "Timeface",
-          "company": ""
-        },
-        {
-          "id": "FvlMQXRYtea8Mcgivpoo",
-          "year": "2023",
-          "heading": "Sunshines on a screen",
-          "url": "http://ambient-reader.vercel.app",
-          "collaborators": [],
-          "description": "An experiment using react-three-fiber to simulate natural sunshine and shadow on a screen.",
-          "attachments": [
-            {
-              "type": "video",
-              "width": 1444,
-              "height": 1080,
-              "url": "/content/media/Sunshines-on-a-screen-1.mp4"
-            },
-            {
-              "type": "video",
-              "width": 1920,
-              "height": 1080,
-              "url": "/content/media/Sunshines-on-a-screen-2.mp4"
-            }
-          ],
-          "type": "sideProject",
-          "title": "Sunshines on a screen",
-          "company": ""
-        },
-        {
-          "id": "lEnM1ybvr5ISIwDsx5XF",
-          "year": "2022",
-          "heading": "Handzplay",
-          "url": "http://handzplay.vercel.app",
-          "collaborators": [],
-          "description": "Playground for hand gesture interaction. Add rules and interfaces by yourself.",
-          "attachments": [
-            {
-              "type": "video",
-              "width": 1280,
-              "height": 720,
-              "url": "/content/media/Handzplay-1.mp4"
-            },
-            {
-              "type": "video",
-              "width": 1280,
-              "height": 720,
-              "url": "/content/media/Handzplay-2.mp4"
-            }
-          ],
-          "type": "sideProject",
-          "title": "Handzplay",
-          "company": null
-        },
-        {
-          "id": "wK8TELrZz0CK86ofR8qW",
-          "year": "2021",
-          "heading": "better on paper",
-          "url": "https://itsbetteronpaper.com/",
-          "collaborators": [],
-          "description": "Film photography archive of mine.",
-          "attachments": [
-            {
-              "type": "video",
-              "width": 1080,
-              "height": 1080,
-              "url": "/content/media/better-on-paper-1.mp4"
-            },
-            {
-              "type": "video",
-              "width": 1440,
-              "height": 1080,
-              "url": "/content/media/better-on-paper-2.mp4"
-            },
-            {
-              "type": "video",
-              "width": 1080,
-              "height": 1080,
-              "url": "/content/media/better-on-paper-3.mp4"
-            }
-          ],
-          "type": "sideProject",
-          "title": "better on paper",
-          "company": ""
-        }
-      ]
-    },
-    {
       "name": "Projects",
       "items": [
         {
-          "id": "4erFVeTAow07nPCJLPaI",
-          "year": "2023",
-          "heading": "Framer Slides",
-          "url": "https://framer-slides.framer.website",
+          "id": "Q98W5YVcPLJQvQEBWNZF",
+          "year": "Ongoing",
+          "heading": "Life with subtitles",
+          "url": "https://www.ericafustero.com/project/vida-con-subtitulos",
           "collaborators": [],
-          "description": "Design your slides on Framer - a new way to create interactive slides with videos and buttons, and simply share with a URL. Designed to be responsive and customizable.",
+          "description": "Comic strips based on daily life and observations, often focusing on human contradictions and the absurd moments that surround us.",
           "attachments": [
             {
-              "type": "video",
-              "width": 1584,
-              "height": 1080,
-              "url": "/content/media/Framer-Slides-1.mp4"
+              "type": "image",
+              "width": 800,
+              "height": 800,
+              "url": "/content/media/Life-with-subtitles-1.jpg"
             },
             {
-              "type": "video",
-              "width": 1422,
-              "height": 800,
-              "url": "/content/media/Framer-Slides-2.mp4"
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/Life-with-subtitles-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/Life-with-subtitles-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/Life-with-subtitles-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/Life-with-subtitles-5.jpg"
             }
           ],
           "type": "project",
-          "title": "Framer Slides",
+          "title": "Life with subtitles",
           "company": ""
         },
         {
-          "id": "ClaBJv3QL3CV4AmrRrZS",
-          "year": "2023",
-          "heading": "ShaderGradient 1.0 at ShaderGradient",
-          "url": "https://shadergradient.co",
+          "id": "Ck1tTptForenZsQtdnCR",
+          "year": "2025",
+          "heading": "Record Club: 2024 Year in Review at Record Club",
+          "url": "https://record.club/2024",
           "collaborators": [
             {
-              "displayName": "ruucm",
-              "profilePhoto": "/content/collaborators/ruucm.jpg",
-              "profileURL": "https://read.cv/ruucm"
+              "displayName": "Mattias",
+              "profilePhoto": "/content/collaborators/mattias.jpg",
+              "profileURL": "https://read.cv/mattias"
             }
           ],
-          "description": "Create moving gradients - now available for Framer, Figma, and React!\n\nWe're also live on Product Hunt - please support us with upvotes and reviews!\nhttps://www.producthunt.com/posts/shadergradient-1-0-official-launch",
+          "description": "[Record Club](https://record.club/) is a music discovery platform and social network. For their 2024 Year in Review retrospective I created a set of 12 illustrations paying tribute to some of the most popular albums in the platform and designed the videos and graphics for the social media campaign.\n\nMost fun project of 2024? Absolutely.\\\nThe killer design of the mini-site is from [Mattias](https://read.cv/mattias).",
           "attachments": [
             {
               "type": "video",
-              "width": 1270,
-              "height": 760,
-              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-1.mp4"
+              "width": 1080,
+              "height": 1350,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-1.mp4"
             },
             {
               "type": "video",
-              "width": 720,
-              "height": 1276,
-              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-2.mov"
+              "width": 810,
+              "height": 1012,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-2.mp4"
             },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-5.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-6.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-7.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-8.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-9.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-10.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-11.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-12.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-13.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1000,
+              "height": 1000,
+              "url": "/content/media/Record-Club-2024-Year-in-Review-at-Record-Club-14.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Record Club: 2024 Year in Review",
+          "company": "Record Club"
+        },
+        {
+          "id": "7gCMkqvw8QJnQr2rO0Ol",
+          "year": "2024",
+          "heading": "A drawing a day",
+          "url": "https://www.ericafustero.com/project/daily-drawings",
+          "collaborators": [],
+          "description": "During 2024 I made this bilingual diary, which served as both a comic, a collection of my memories and a portfolio to show and evolve my drawing style.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/A-drawing-a-day-1.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/A-drawing-a-day-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/A-drawing-a-day-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/A-drawing-a-day-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/A-drawing-a-day-5.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/A-drawing-a-day-6.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/A-drawing-a-day-7.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/A-drawing-a-day-8.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "A drawing a day",
+          "company": ""
+        },
+        {
+          "id": "kTzuBkTcCsdFVGfkTvZ3",
+          "year": "2024",
+          "heading": "Zaragoza Fear Fest at Zaragoza Fear",
+          "url": "https://www.ericafustero.com/project/zgzfearfest2024",
+          "collaborators": [],
+          "description": "Visual campaign for Zaragoza Fear Fest, a horror and genre film festival organized by the [Zaragoza Fear](https://www.zgzfear.com/) collective. The design pays tribute to the production of 'The Texas Chainsaw Massacre', as terrifying as the film itself. Along with the poster I created a set of postcards capturing some behind the scenes moments from the movie.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 1358,
+              "height": 1920,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-1.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1721,
+              "height": 1722,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-5.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-6.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Zaragoza-Fear-Fest-at-Zaragoza-Fear-7.gif"
+            }
+          ],
+          "type": "project",
+          "title": "Zaragoza Fear Fest",
+          "company": "Zaragoza Fear"
+        },
+        {
+          "id": "n1Av4QkjsgdsigkH26J5",
+          "year": "2024",
+          "heading": "Tourism for beginners",
+          "url": "https://www.ericafustero.com/project/tourism-beginners",
+          "collaborators": [],
+          "description": "A guide with practical advice for the conscious traveler.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Tourism-for-beginners-1.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Tourism-for-beginners-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Tourism-for-beginners-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Tourism-for-beginners-4.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Tourism for beginners",
+          "company": ""
+        },
+        {
+          "id": "yKhKlGUAKjuN85zKw1lU",
+          "year": "2024",
+          "heading": "Cafecito reviews",
+          "url": "https://www.ericafustero.com/project/cafecito-reviews",
+          "collaborators": [],
+          "description": "Observations and thoughts around the world of speciality coffee.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Cafecito-reviews-1.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Cafecito-reviews-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Cafecito-reviews-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1920,
+              "height": 1920,
+              "url": "/content/media/Cafecito-reviews-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Cafecito-reviews-5.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Cafecito-reviews-6.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Cafecito reviews",
+          "company": ""
+        },
+        {
+          "id": "DW4nFCjYwlJ6CQnV2J9Z",
+          "year": "2024",
+          "heading": "Movies, music, books",
+          "url": "https://www.ericafustero.com/project/movies-music-books",
+          "collaborators": [],
+          "description": "A selection of illustrations inspired by movies, music and books. You can see more of these in my [Best of 2023 article](https://www.ericafustero.com/project/top-2023) and in my [blog](https://www.ericafustero.com/tag/favoritos-del-mes).",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 1100,
+              "height": 1500,
+              "url": "/content/media/Movies-music-books-1.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1100,
+              "height": 1500,
+              "url": "/content/media/Movies-music-books-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1100,
+              "height": 1500,
+              "url": "/content/media/Movies-music-books-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1100,
+              "height": 1500,
+              "url": "/content/media/Movies-music-books-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1100,
+              "height": 1500,
+              "url": "/content/media/Movies-music-books-5.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Movies, music, books",
+          "company": ""
+        },
+        {
+          "id": "BUs2sONSbHtJk2pWQAFQ",
+          "year": "2024",
+          "heading": "Meeting at 10",
+          "url": "https://www.ericafustero.com/project/meeting-at-10",
+          "collaborators": [],
+          "description": "Animated short film about a woman running late for a very important meeting. Head to my website to see the full animation and read about the making of.",
+          "attachments": [
             {
               "type": "video",
               "width": 1920,
               "height": 1080,
-              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-3.mp4"
-            },
-            {
-              "type": "video",
-              "width": 720,
-              "height": 1189,
-              "url": "/content/media/ShaderGradient-10-at-ShaderGradient-4.mov"
+              "url": "/content/media/Meeting-at-10.mp4"
             }
           ],
           "type": "project",
-          "title": "ShaderGradient 1.0",
-          "company": "ShaderGradient"
+          "title": "Meeting at 10",
+          "company": ""
         },
         {
-          "id": "MAFtNoTK658eSXpeoe9e",
-          "year": "2019",
-          "heading": "Wonderland (2024)",
-          "url": null,
+          "id": "KLA3a3YXskeivNSIXn7Y",
+          "year": "2024",
+          "heading": "Best of 2023",
+          "url": "https://www.ericafustero.com/project/top-2023",
           "collaborators": [],
-          "description": "Props designer for the film Wonderland, directed by Taeyong Kim. Designed the objects for the film, and managed the production of mockups.",
+          "description": "My illustrated year in review, a magazine-like post topped off with recommendations from many talented friends.",
+          "attachments": [
+            {
+              "type": "video",
+              "width": 1080,
+              "height": 1080,
+              "url": "/content/media/Best-of-2023-1.mp4"
+            },
+            {
+              "type": "image",
+              "width": 1300,
+              "height": 1300,
+              "url": "/content/media/Best-of-2023-2.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1300,
+              "height": 1300,
+              "url": "/content/media/Best-of-2023-3.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1300,
+              "height": 1300,
+              "url": "/content/media/Best-of-2023-4.jpg"
+            },
+            {
+              "type": "image",
+              "width": 1300,
+              "height": 1300,
+              "url": "/content/media/Best-of-2023-5.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Best of 2023",
+          "company": ""
+        },
+        {
+          "id": "MJRleeqsLaHoCYGWyTco",
+          "year": "2023",
+          "heading": "Based on a true story",
+          "url": "https://www.ericafustero.com/project/basado-en-hechos-reales",
+          "collaborators": [],
+          "description": "Based on a true story is a series of frame by frame animations based on 100% real events.",
           "attachments": [
             {
               "type": "image",
-              "width": 3000,
-              "height": 1687,
-              "url": "/content/media/Wonderland-2024.jpg"
+              "width": 800,
+              "height": 800,
+              "url": "/content/media/Based-on-a-true-story-1.gif"
+            },
+            {
+              "type": "image",
+              "width": 800,
+              "height": 800,
+              "url": "/content/media/Based-on-a-true-story-2.gif"
+            },
+            {
+              "type": "image",
+              "width": 800,
+              "height": 800,
+              "url": "/content/media/Based-on-a-true-story-3.gif"
             }
           ],
           "type": "project",
-          "title": "Wonderland (2024)",
+          "title": "Based on a true story",
+          "company": ""
+        },
+        {
+          "id": "CikFPwpU7yv7UaE5k7VT",
+          "year": "2023",
+          "heading": "Visual design at Redbubble",
+          "url": "https://www.ericafustero.com/project/redbubble",
+          "collaborators": [],
+          "description": "As an in-house designer and art director, I partnered with designers, copywriters, and marketers to help Redbubble be the main source for Gen Z and Gen X audiences looking for super-specific designs.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 480,
+              "height": 520,
+              "url": "/content/media/Visual-design-at-Redbubble-1.gif"
+            },
+            {
+              "type": "image",
+              "width": 960,
+              "height": 960,
+              "url": "/content/media/Visual-design-at-Redbubble-2.gif"
+            },
+            {
+              "type": "image",
+              "width": 700,
+              "height": 700,
+              "url": "/content/media/Visual-design-at-Redbubble-3.gif"
+            },
+            {
+              "type": "image",
+              "width": 640,
+              "height": 700,
+              "url": "/content/media/Visual-design-at-Redbubble-4.gif"
+            }
+          ],
+          "type": "project",
+          "title": "Visual design",
+          "company": "Redbubble"
+        },
+        {
+          "id": "bD8SfxuBy1uiKSBGnaGI",
+          "year": "2023",
+          "heading": "Animated randomness",
+          "url": "https://www.ericafustero.com/project/animation-archive",
+          "collaborators": [],
+          "description": "A selection of gifs and short animations.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 750,
+              "height": 750,
+              "url": "/content/media/Animated-randomness-1.gif"
+            },
+            {
+              "type": "image",
+              "width": 750,
+              "height": 750,
+              "url": "/content/media/Animated-randomness-2.gif"
+            },
+            {
+              "type": "image",
+              "width": 800,
+              "height": 800,
+              "url": "/content/media/Animated-randomness-3.gif"
+            }
+          ],
+          "type": "project",
+          "title": "Animated randomness",
+          "company": ""
+        },
+        {
+          "id": "0XJ6oO3yM2hZf9wm5dvu",
+          "year": "2023",
+          "heading": "Diary comics 2016-2023",
+          "url": "https://www.ericafustero.com/project/diary-comics",
+          "collaborators": [],
+          "description": "Excerpts from my illustrated diaries, where I draw comic strips and visual essays about my daily life.",
+          "attachments": [
+            {
+              "type": "image",
+              "width": 2400,
+              "height": 1600,
+              "url": "/content/media/Diary-comics-2016-2023.jpg"
+            }
+          ],
+          "type": "project",
+          "title": "Diary comics 2016-2023",
           "company": ""
         }
       ]
@@ -543,79 +1233,17 @@
       "name": "Work Experience",
       "items": [
         {
-          "id": "TKDEvZViQL3kpDdqWE9o",
-          "year": "2021 — 2024",
-          "heading": "Interaction Designer at Dell Technologies",
-          "url": null,
+          "id": "zZiqRu1dF5mrzxJcmtU5",
+          "year": "2016 — 2023",
+          "heading": "Visual designer at Redbubble",
+          "url": "https://www.ericafustero.com/project/redbubble",
           "collaborators": [],
-          "description": "Interaction designer @ Dell Innovation Studio, exploring future experiences and interactions",
+          "description": "As an in-house visual designer, I took part in promotions, seasonal campaigns, product launches, awareness campaigns, and internal projects. \n\nMy role changed from project to project: art direction, animation, illustration, production artist, or all at once, depending on the project needs and timeframes.",
           "attachments": [],
           "type": "workExperience",
-          "title": "Interaction Designer",
-          "company": "Dell Technologies",
-          "location": "Singapore"
-        },
-        {
-          "id": "zPGUwxdXOdvs4E57TzaR",
-          "year": "2019 — 2019",
-          "heading": "Creative Designer at Doubleme",
-          "url": "https://www.twin.world/",
-          "collaborators": [],
-          "description": "Participated in the early stage of the product to shape the strategy and visuals for the overall user experience.",
-          "attachments": [],
-          "type": "workExperience",
-          "title": "Creative Designer",
-          "company": "Doubleme",
-          "location": "Seoul, Korea"
-        },
-        {
-          "id": "Al22ZSKvyUOlMhfaHFgC",
-          "year": "2018 — 2019",
-          "heading": "Design internship at Dell Technologies",
-          "url": null,
-          "collaborators": [],
-          "description": null,
-          "attachments": [],
-          "type": "workExperience",
-          "title": "Design internship",
-          "company": "Dell Technologies",
-          "location": "Austin, TX"
-        }
-      ]
-    },
-    {
-      "name": "Writing",
-      "items": [
-        {
-          "id": "xzTV5kEy6rwoMhbn8U8F",
-          "year": "2023",
-          "heading": "I connected Stable Diffusion with my smartphone camera. And here's what I learned, Prototypr",
-          "url": "https://prototypr.io/post/i-connected-stable-diffusion-with-my-smartphone-camera-and-heres-what-i-learned",
-          "collaborators": [],
-          "description": null,
-          "attachments": [
-            {
-              "type": "video",
-              "width": 640,
-              "height": 500,
-              "url": "/content/media/I-connected-Stable-Diffusion-with-my-smartphone-camera-And-heres-what-I-learned-Prototypr.mp4"
-            }
-          ],
-          "type": "writing",
-          "title": "I connected Stable Diffusion with my smartphone camera. And here's what I learned",
-          "publisher": "Prototypr"
-        },
-        {
-          "id": "1r3BrDNnDA64JN31pHJG",
-          "year": "2022",
-          "heading": "Medium",
-          "url": "https://medium.com/@stone.skipper",
-          "collaborators": [],
-          "description": "Sharing thoughts behind my projects and explorations in design and tech.",
-          "attachments": [],
-          "type": "writing",
-          "title": "Medium",
-          "publisher": null
+          "title": "Visual designer",
+          "company": "Redbubble",
+          "location": "Remote"
         }
       ]
     },
@@ -623,28 +1251,40 @@
       "name": "Contact",
       "items": [
         {
-          "id": "k2D4tFEPnN0bILqjEbiU",
-          "platform": "Twitter",
-          "handle": "smee_leee",
-          "url": "https://twitter.com/smee_leee"
+          "id": "3ct6Kv0PWgzHeVmy83Mf",
+          "platform": "Website",
+          "handle": "ericafustero.com",
+          "url": "https://www.ericafustero.com/"
         },
         {
-          "id": "bAijwD5YmmxJFME8QvZe",
+          "id": "mCmukmQWpbC7xtQ9Px5g",
           "platform": "Email",
-          "handle": "iam.seungmee.lee@gmail.com",
-          "url": "mailto:iam.seungmee.lee@gmail.com"
+          "handle": "hola@ericafustero.com",
+          "url": "mailto:hola@ericafustero.com"
         },
         {
-          "id": "e1rcNSNUho9dVk7wxFgs",
+          "id": "isRh9vs21dgC2nTiPnUF",
+          "platform": "Mastodon",
+          "handle": "@ericafustero",
+          "url": "https://mastodon.social/@ericafustero"
+        },
+        {
+          "id": "wTjGR2prUAoFQNszyXvR",
+          "platform": "Bluesky",
+          "handle": "ericafustero.com",
+          "url": "https://bsky.app/profile/ericafustero.com"
+        },
+        {
+          "id": "0twoNYZpzCEuez9KsvnO",
           "platform": "Instagram",
-          "handle": "smee.leee",
-          "url": "https://instagram.com/smee.leee"
+          "handle": "ericafustero",
+          "url": "https://instagram.com/ericafustero"
         },
         {
-          "id": "GErjI3GhfQF9Iacc11v0",
-          "platform": "Coffee chat",
-          "handle": "Book a time",
-          "url": "https://calendar.app.google/29vsRfFNRgbZis997"
+          "id": "aDp45o63e6LvrR9lac9t",
+          "platform": "LinkedIn",
+          "handle": "ericafustero",
+          "url": "https://linkedin.com/in/ericafustero"
         }
       ]
     }

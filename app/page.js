@@ -3,14 +3,15 @@
 import React, { useMemo, useEffect, useState, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom/client';
 import { combineCollections, RichText } from 'readcv';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform, useAnimate } from 'framer-motion';
 import '@fontsource-variable/inter';
 import '@fontsource/anton';
 import {useSwipeable} from 'react-swipeable'
 
 
-// some properties to tweak
+// some shared properties between components
 const paperAnim ={type:'spring', bounce:0.05}
+const noAnim = {duration:0}
 const paperPadding= '3vw'
 const mobilePaperPadding = '3vh'
 const defaultPaletteSize = 24
@@ -21,6 +22,7 @@ import cv from './cv';
 
 function App() {
   const isDesktop = useDesktopDetect();
+  const [current, setCurrent] = useState(0);
 
   const [swipe, setSwipe] = useState("");
   const config = {
@@ -48,32 +50,35 @@ function App() {
     ...config,
   });
 
+ const projects = combineCollections(
+    cv.projects,
+    cv.workExperience,
+    cv.sideProjects,
+  ).filter((x) => x.attachments.length > 0);
 
+ const [allColorsReady, setAllColorsReady] = useState(false);
+  
   return (
-    <div style={{ background: "black", width:'100vw', height:'100dvh', display:'flex', flexDirection:'column', justifyContent:isDesktop === true? 'flex-start': 'center', alignItems:isDesktop === true? 'center':'flex-start' }} {...handlers}>
-      <ColorPapers swipe={swipe} setSwipe={setSwipe} />
+    <div style={{ background: "black", width:'100vw', height:isDesktop === true? 'fit-content':'100dvh', display:'flex', flexDirection:'column', justifyContent:isDesktop === true? 'flex-start': 'center', alignItems:isDesktop === true? 'center':'flex-start', overflowY: isDesktop === true?'scroll':'hidden' }} {...handlers}>
+      <ColorPapers swipe={swipe} setSwipe={setSwipe} current={current} setCurrent={setCurrent} projects={projects} allColorsReady={allColorsReady} setAllColorsReady={setAllColorsReady}/>
+      {isDesktop === true &&   <Scroll num={projects.length} current={current}
+          setCurrent={setCurrent} allColorsReady={allColorsReady}/>}
+
+     
       {isDesktop === true && <Footer />}
     </div>
   );
 }
 
 
-function ColorPapers({ swipe, setSwipe }) {
+function ColorPapers({ swipe, setSwipe, current, setCurrent, projects, allColorsReady, setAllColorsReady }) {
 
-  const projects = combineCollections(
-    cv.projects,
-    cv.workExperience,
-    cv.sideProjects,
-  ).filter((x) => x.attachments.length > 0);
   
   const [attachments, setAttachments] = useState([]);
-  const [current, setCurrent] = useState(0);
   const [paletteSize, setPaletteSize] = useState(4);
-  const [allColorsReady, setAllColorsReady] = useState(false);
+ 
   
   const colorReadyCount = useRef(0);
-
-
 
   useEffect(() => {
     projects.forEach((project) => {
@@ -89,20 +94,19 @@ function ColorPapers({ swipe, setSwipe }) {
   }, []);
 
   const handleSwipe = async () => {
-    if (swipe === "right" && current > 0 && isDesktop === false) {
+    if (swipe === "right" && current > 0 && isDesktop === false && allColorsReady === true) {
       await setCurrent(current - 1);
       setSwipe("");
     } else if (
       swipe === "left" &&
-      current < projects.length &&
-      isDesktop === false
+      isDesktop === false && allColorsReady === true
     ) {
       await setCurrent(current + 1);
       setSwipe("");
     } else if (
       swipe === "left" &&
       current === projects.length &&
-      isDesktop === false
+      isDesktop === false && allColorsReady === true
     ) {
       await setCurrent(0);
       setSwipe("");
@@ -111,7 +115,7 @@ function ColorPapers({ swipe, setSwipe }) {
 
   useEffect(() => {
     handleSwipe();
-  }, [swipe]);
+  }, [swipe, allColorsReady]);
 
     const isDesktop = useDesktopDetect();
 
@@ -130,11 +134,13 @@ function ColorPapers({ swipe, setSwipe }) {
     }
   }, [allColorsReady, isDesktop]);
 
+  const totalRotations = Math.floor(current / (projects.length+1));
+    const currentIndex = current % (projects.length+1);
   return (
     <div
       style={{
         perspective: 2800,
-        position: "relative",
+        position: "fixed",
         width:
           isDesktop === true
             ? `calc(100vw - ${paperPadding} * 2)`
@@ -144,9 +150,42 @@ function ColorPapers({ swipe, setSwipe }) {
             ? `calc(100dvh - ${paperPadding})`
             : `calc(100dvh - ${mobilePaperPadding} * 2)`,
         overflow: "visible",
+        zIndex:10
       }}
     >
+            <motion.div 
+              // shadow
+              style={{
+     height:
+            isDesktop === true
+              ? `calc(100dvh - ${paperPadding} - ${projects.length * paletteSize}px)`
+              : "100%",
+          width:
+            isDesktop === true
+              ? "100%"
+              : `calc(100% - ${projects.length * paletteSize}px)`,
+          position: "absolute",
+           display:allColorsReady === true ?'block' :'none',
+        top: 0,
+        originX: 0,
+        originY: 0,
+      background:'rgba(0,0,0,0.4)',
+    pointerEvents:'none'
+      }} 
+        initial={{opacity:0}}
+        animate={{
+          zIndex: projects.length + 1,
+        skewX:  current > 0 && isDesktop === true ?  30 : 0,
+          skewY:  currentIndex > 0 && isDesktop === false ?  50 : 0,
+          opacity:  (current > 0 && isDesktop === true) || (currentIndex > 0 && isDesktop === false)?  0 :1,
+          filter: (current > 0 && isDesktop === true ) || (currentIndex > 0 && isDesktop === false)?  'blur(10px)' :'blur(0px)',
+      
+      }}
+
+         transition={paperAnim}
+        ></motion.div>
       <motion.div
+        className="paper"
         style={{
           zIndex: projects.length + 1,
           display: "flex",
@@ -173,11 +212,7 @@ function ColorPapers({ swipe, setSwipe }) {
               : `calc(100% - ${projects.length * paletteSize}px)`,
           background: "white",
           rotateX: current > 0 && isDesktop === true ? 90 : 0,
-          rotateY: current > 0 && isDesktop === false ? -90 : 0,
-          boxShadow:
-            current > 0
-              ? "3px 3px 10px rgba(0,0,0,0)"
-              : "3px 3px 10px rgba(0,0,0,0.1)",
+          rotateY : currentIndex> 0 && isDesktop === false? -90 + -360 * totalRotations: 0 - 360 * totalRotations,
           height:
             isDesktop === true
               ? `calc(100dvh - ${paperPadding} - ${projects.length * paletteSize}px)`
@@ -191,6 +226,7 @@ function ColorPapers({ swipe, setSwipe }) {
       >
         <PaperHeader />
       </motion.div>
+      
       {projects.map((info, index) => (
         <ColorTitle
           key={"project" + index}
@@ -205,7 +241,9 @@ function ColorPapers({ swipe, setSwipe }) {
           onColorReady={handleColorReady}
         />
       ))}
+     
     </div>
+     
   );
 }
 
@@ -232,8 +270,8 @@ const ColorTitle = ({
   const [base64Image, setBase64Image] = useState("");
   const [color, setColor] = useState("#ffffff");
   const [textColor, setTextColor] = useState("black");
-  const [consideredColors, setConsideredColors] = useState([]);
 
+    const [isScrollable, setIsScrollable] = useState(false);
 
   const [showLeftFade, setShowLeftFade] = useState(false);
   const [showRightFade, setShowRightFade] = useState(false);
@@ -247,11 +285,13 @@ const [showBottomFade, setShowBottomFade] = useState(false);
       if (isDesktop) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
         const isScrollable = scrollWidth > clientWidth;
+        setIsScrollable(isScrollable)
         setShowLeftFade(scrollLeft > 0);
         setShowRightFade(isScrollable && scrollLeft < scrollWidth - clientWidth - 1);
       } else {
         const { scrollTop, scrollHeight, clientHeight } = scrollRef.current;
         const isScrollable = scrollHeight > clientHeight;
+        setIsScrollable(isScrollable)
         setShowTopFade(scrollTop > 0);
         setShowBottomFade(isScrollable && scrollTop < scrollHeight - clientHeight - 1);
       }
@@ -265,14 +305,7 @@ const [showBottomFade, setShowBottomFade] = useState(false);
     return () => window.removeEventListener('resize', handleResize);
   }, [checkScrollPosition, data, info, allColorsReady]);
 
-  //   useEffect(() => {
-  //   // Check scroll position after content loads or updates
-  //   const timer = setTimeout(() => {
-  //     checkScrollPosition();
-  //   }, 100);
 
-  //   return () => clearTimeout(timer);
-  // }, [checkScrollPosition, data, info, allColorsReady]);
 
   const processFirstMedia = useCallback(async () => {
     const canvas = canvasRef.current;
@@ -330,10 +363,82 @@ const [showBottomFade, setShowBottomFade] = useState(false);
   useEffect(() => {
     processFirstMedia();
   }, [processFirstMedia]);
+
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = useCallback((e) => {
+    if (!isDesktop) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  }, [isDesktop]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  const handleMouseMove = useCallback((e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scrolling speed
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  }, [isDragging, startX, scrollLeft]);
+
+  useEffect(() => {
+    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [handleMouseUp, handleMouseMove]);
+
+
   
+  // for mobile infinite flipping
+   const totalRotations = Math.floor(current / (num+1));
+    const currentIndex = current % (num+1);
+
 
   return (
+    <>
+      <motion.div style={{
+       width:
+          isDesktop === true
+            ? "100%"
+            : `calc(100vw - ${mobilePaperPadding} - ${(num - index - 1) * paletteSize}px)`,
+          position: "absolute",
+        top: 0,
+        originX: 0,
+        originY: 0,
+     display:allColorsReady === true ?'block' :'none',
+      
+      background:'rgba(0,0,0,0.4)',
+      pointerEvents:'none',
+       height:
+          isDesktop === true
+            ? `calc(100dvh - ${paperPadding} - ${(num - index - 1) * paletteSize}px)`
+            : "100%",
+      }} 
+        initial={{opacity:0}}
+        animate={{
+              zIndex: num - index,
+        skewX: index + 1 < current && isDesktop === true ? 30 : 0,
+      
+          skewY : index + 1 < currentIndex && isDesktop === false? 50: 0,
+
+          opacity: (index + 1 < current && isDesktop === true) || (index + 1 < currentIndex && isDesktop === false) ? 0 :1,
+          filter:(index + 1 < current && isDesktop === true ) || (index + 1 < currentIndex && isDesktop === false) ? 'blur(10px)' :'blur(0px)',
+      }}
+  transition={paperAnim}
+       
+        ></motion.div>
     <motion.div
+      className="paper"
       key={info.heading}
       style={{
         width:
@@ -352,24 +457,16 @@ const [showBottomFade, setShowBottomFade] = useState(false);
         originY: 0,
         overflow: "hidden",
       }}
-      onMouseEnter={() => {
-        if (isDesktop === true && allColorsReady === true) {
-          setCurrent(index + 1);
-        }
-      }}
-      onMouseLeave={() => {
-       if (isDesktop === true) {
-        setCurrent(0);
-        }
-      }} 
+    
       animate={{
         rotateX: index + 1 < current && isDesktop === true ? 90 : 0,
-        rotateY: index + 1 < current && isDesktop === false ? -90 : 0,
+      
+        rotateY : index + 1 < currentIndex && isDesktop === false? -90 + -360 * totalRotations: 0 - 360 * totalRotations,
+
+
         zIndex: num - index,
-        boxShadow:
-          index + 1 < current
-            ? "3px 3px 10px rgba(0,0,0,0)"
-            : "3px 3px 10px rgba(0,0,0,0.1)",
+        
+      
         height:
           isDesktop === true
             ? `calc(100dvh - ${paperPadding} - ${(num - index - 1) * paletteSize}px)`
@@ -377,9 +474,12 @@ const [showBottomFade, setShowBottomFade] = useState(false);
         background: allColorsReady === true ? color : "#ffffff",
       }}
       transition={{
-        width: { duration: isDesktop === true ? 0 : 0.3 },
-        height: { duration: isDesktop === false ? 0 : 0.3 },
-        ...paperAnim,
+                ...paperAnim,
+
+        width: { duration: isDesktop === true ? 0 : 0.3,},
+        height: { duration: isDesktop === false ? 0 : 0.3,delay: isDesktop === true ?0.05*(index+1):0 },
+        background:{duration:0,delay: isDesktop === true ?0.05*(index+1):0},
+     
       }}
     >
       <div
@@ -406,9 +506,14 @@ const [showBottomFade, setShowBottomFade] = useState(false);
           overflowX: isDesktop === true ? "auto" : "hidden",
           overflowY: isDesktop === true ? "hidden" : "auto",
           position: "relative",
+          cursor: isDesktop && isScrollable ? (isDragging ? 'grabbing' : 'grab') : 'default',
+
+
         }}
           ref={scrollRef}
         onScroll={checkScrollPosition}
+                onMouseDown={handleMouseDown}
+
         className="hideScrollBar"
       >
         <motion.div
@@ -422,7 +527,7 @@ const [showBottomFade, setShowBottomFade] = useState(false);
             justifyContent: "flex-start",
           }}
           initial={{ opacity: 0 }}
-          animate={{ opacity: current === index + 1 ? 1 : 0 }}
+          animate={{ opacity: currentIndex === index + 1 ? 1 : 0 }}
                     
 
         >
@@ -452,8 +557,12 @@ const [showBottomFade, setShowBottomFade] = useState(false);
                   style={{
                     height: isDesktop === true ? "100%" : undefined,
                     width: isDesktop === false ? "100%" : undefined,
+                          pointerEvents: isDragging ? 'none' : 'auto',
+                    userSelect: 'none',
                   }}
                   alt={`Attachment ${index}`}
+                  draggable={false}
+
                 />
               ) : (
                 <video
@@ -467,7 +576,11 @@ const [showBottomFade, setShowBottomFade] = useState(false);
                   style={{
                     height: isDesktop === true ? "100%" : undefined,
                     width: isDesktop === false ? "100%" : undefined,
+                          pointerEvents: isDragging ? 'none' : 'auto',
+                    userSelect: 'none',
                   }}
+                  draggable={false}
+
                 />
               )}
             </div>
@@ -552,9 +665,9 @@ const [showBottomFade, setShowBottomFade] = useState(false);
         </>
       )}
     </motion.div>
+      </>
   );
 };
-
 
 function Footer(props) {
   const isDesktop = useDesktopDetect();
@@ -688,6 +801,125 @@ function PaperHeader(props) {
   );
 }
 
+
+function Scroll({ num, current, setCurrent, allColorsReady }) {
+  const { scrollYProgress } = useScroll();
+  const containerRef = useRef(null);
+  const scrollBarRef = useRef(null);
+  const sectionHeight = window.innerHeight * 0.6;
+  const [scope, animate] = useAnimate();
+
+  const scrollBarHeight = 200;
+  const scopeBarHeight = 50;
+  
+  const smoothScrollYProgress = useSpring(scrollYProgress, {
+    // stiffness: 100,
+    // damping: 30,
+    type:'spring', bounce:0.05,
+    restDelta: 0.001
+  });
+
+  const scrollIndicatorY = useTransform(smoothScrollYProgress, [0, 1], [0, scrollBarHeight - scopeBarHeight]);
+
+  const updateCurrent = useCallback(() => {
+    if (containerRef.current) {
+      const scrollPercentage = scrollYProgress.get();
+      let newCurrent = Math.floor(scrollPercentage * (num + 1));
+      newCurrent = Math.min(Math.max(newCurrent, 0), num);
+      if (newCurrent !== current) {
+        setCurrent(newCurrent);
+      }
+    }
+  }, [scrollYProgress, current, setCurrent, num]);
+
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange(updateCurrent);
+    return () => unsubscribe();
+  }, [scrollYProgress, updateCurrent]);
+
+  const handleScrollBarClick = useCallback((event) => {
+    if (scrollBarRef.current && containerRef.current) {
+      const scrollBarRect = scrollBarRef.current.getBoundingClientRect();
+      const clickY = event.clientY - scrollBarRect.top;
+      const scrollPercentage = clickY / scrollBarRect.height;
+      
+      const containerHeight = containerRef.current.clientHeight;
+      const windowHeight = window.innerHeight;
+      const maxScroll = containerHeight - windowHeight;
+      const targetScrollY = scrollPercentage * maxScroll;
+
+      animate(scope.current, { y: scrollPercentage * 180 }, { type: 'spring', bounce: 0.05});
+      window.scrollTo({
+        top: targetScrollY,
+        behavior: 'smooth'
+      });
+    }
+  }, [animate, scope]);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{
+        width: '100%',
+        height: allColorsReady === true? `${(num + 1) * sectionHeight}px`:0,
+        position: 'absolute',
+        top: 0,
+        left: 0,
+    
+        pointerEvents: 'none'
+      }}
+    >
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        right: 0,
+        width: paperPadding,
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        gap: 8,
+        alignItems: 'center'
+      }}>
+        <motion.div 
+          ref={scrollBarRef}
+          onClick={handleScrollBarClick}
+          style={{
+            width: 3, 
+         
+            background: 'rgba(255,255,255,0.3)', 
+            borderRadius: 1.5, 
+            overflow: 'hidden',
+            cursor: 'pointer',
+            pointerEvents: 'auto'
+          }}
+          animate={{   height: allColorsReady === true? scrollBarHeight:scopeBarHeight, }}
+        >
+          <motion.div 
+            ref={scope}
+            style={{
+              width: 3, 
+              height: scopeBarHeight, 
+              background: 'white',
+              borderRadius: 1.5,
+              y: scrollIndicatorY
+            }}
+          />
+        </motion.div>
+      </div>
+      {Array.from({ length: num + 1 }, (_, i) => (
+        <motion.div
+          key={'section' + i}
+          style={{
+            width: '100%',
+            height: `${sectionHeight}px`,
+            // border: '1px solid red'
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 // colorUtils.js
 

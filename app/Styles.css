@@ -30,7 +30,17 @@ body {
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: none;
   background: black;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x:hidden;
+  overflow-y:scroll;
+  width:100vw;
+  height:100dvh;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .anton {
@@ -65,6 +75,7 @@ a {
   display: block;
   border-radius: 8px;
   overflow: hidden;
+  pointer-events:none;
 }
 
 .media::after {
@@ -83,6 +94,17 @@ a {
   height: 100%;
   display: block;
   object-fit: cover;
+    pointer-events:none;
+      user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.paper {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 
