@@ -2,7 +2,7 @@ import "./Styles.css";
 
 export const metadata = {
   title: "Booklet",
-  description: "/\* What is it \*/
+  description: `/\* What is it \*/
 
 Booklet is a fun, lightweight showcase for your works, making people to flip through pages for a quick browse.
 
@@ -18,15 +18,13 @@ The color for each project is extracted from the first media in that project. Th
 
 /\* Support \*/
 
-If you need help modifying this template, message me on Posts [(@seungmee\_lee)](https://read.cv/seungmee_lee)",
+If you need help modifying this template, message me on Posts [(@seungmee\_lee)](https://read.cv/seungmee_lee)`,
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }
